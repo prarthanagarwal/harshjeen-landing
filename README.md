@@ -1,30 +1,36 @@
-# Pinky Promise Holdings
+# HarshJeen InfoTech
 
-i want you to build a landing page of my company.  The idea is this is the parent comapny which is registered with GST and offical docs. all the apps I will build and have built will be under this comapny.
+The company landing page for HarshJeen InfoTech, the parent company behind the apps and websites I build. It introduces the company, highlights its products, and links to the founder's independently maintained portfolio.
 
-www.pinky-promise.app is one of the apps.
-www.prarthanagarwal.com is my personal portfolio
-GST NUMber: 24GNXPP5076B1ZI
+## Portfolio
 
-I want you to incorporate everything and aek the website to be really classy and simple. Elegance is key.
+- [Pinky Promise](https://www.pinky-promise.app) — an iPhone app for making screen-time promises on your own or with someone you trust.
+- [Prarthan Agarwal](https://www.prarthanagarwal.com) — the founder's personal portfolio.
 
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/1c6f10db-ff2b-4f76-b3e7-a2a82a02c811).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+HarshJeen InfoTech is registered in India under GSTIN **24GNXPP5076B1ZI**.
 
 ## Development
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+This project uses Vite, React, TypeScript, and TanStack Start.
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+bun install
 npm run dev
 ```
+
+To create a production build or run the local checks:
+
+```sh
+npm run build
+npm run lint
+npm test
+```
+
+## Project notes
+
+- The company landing page lives at the `/` route.
+- Product and founder links point to their own websites so those properties can be maintained independently.
+- Website preview images live in `public/site-previews/`; the original illustrated hero lives in `public/art/`.
+- Shared UI dependencies are pre-optimized in `vite.config.ts` to keep React stable in open preview sessions.
+
+This project is connected to [Lovable](https://lovable.dev). Changes committed to the connected branch sync to the Lovable editor. Avoid rewriting published Git history.
